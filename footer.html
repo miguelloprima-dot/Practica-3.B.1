@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosco Business - Inicio</title>
+    <style>
+        /* 1. Reset y Estilos Base */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. Barra de Navegación */
+        nav {
+            background-color: #1a237e; /* Azul oscuro */
+            padding: 10px 0;
+            width: 100%;
+            position: absolute; /* Para que flote sobre la imagen */
+            z-index: 10;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 0 20px;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 60px;
+        }
+
+        /* 3. Sección Héroe (Imagen de fondo) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('holograma-planeta-tierra_163855-320.avif'); 
+            /* He puesto una imagen de edificios de alta calidad, cámbiala por la tuya */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* 4. Textos Centrales */
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            color: #ffb300; /* Color naranja/dorado del subtítulo */
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            font-weight: bold;
+        }
+        .testimonial-section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .title-purple {
+            color: #8e44ad;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #eee;
+            margin-bottom: 15px;
+            margin-left: 400px;
+        }
+
+        .headline {
+            font-weight: bold;
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 40px;
+        }
+
+        footer {
+            background-color: #777;
+            color: #333; /* Texto oscuro sobre el gris según la imagen */
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+         <h1 class="titulo">Aplicación practica de flexbox(Footer)</h1>
+          <a href="index.html">Volver</a>
+          <nav>
+        <ul class="menu">
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Consultoría</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Dónde Estamos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Bosco Business</h1>
+        <p>Tu puerta al futuro</p>
+    </section>
+<section class="testimonial-section">
+        <p class="title-purple">Lo dicen nuestros clientes</p>
+        
+        <img src="istockphoto-1496615764-612x612.jpg" alt="Cliente" class="profile-image">
+        
+        <h2 class="headline">Bosco Business es la solución para mi empresa</h2>
+        
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+
+    <footer>
+        (c)2020 Bosco Design. S.L
+    </footer>
+</body>
+</html>

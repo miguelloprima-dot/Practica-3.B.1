@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bosco Business - Inicio</title>
+    <style>
+        /* 1. Reset y Estilos Base */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* 2. Barra de Navegación */
+        nav {
+            background-color: #1a237e; /* Azul oscuro */
+            padding: 10px 0;
+            width: 100%;
+            position: absolute; /* Para que flote sobre la imagen */
+            z-index: 10;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            margin: 0 20px;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 60px;
+        }
+
+        /* 3. Sección Héroe (Imagen de fondo) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('holograma-planeta-tierra_163855-320.avif'); 
+            /* He puesto una imagen de edificios de alta calidad, cámbiala por la tuya */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* 4. Textos Centrales */
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.8rem;
+            color: #ffb300; /* Color naranja/dorado del subtítulo */
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Consultoría</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Dónde Estamos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>Bosco Business</h1>
+        <p>Tu puerta al futuro</p>
+    </section>
+
+</body>
+</html>

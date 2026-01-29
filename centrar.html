@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centrar elementos con flexbox</title>
+    <style>
+        body { 
+            margin: 0; 
+            font-family: Arial, sans-serif;
+        }
+
+        #cabecera { 
+            background-color: antiquewhite; 
+            border-bottom: 10px solid; 
+            padding: 30px; 
+            position: sticky; 
+            top: 0px;
+            text-align: center;
+            
+        }
+
+
+        #menu ul { margin: 0; padding: 10px; list-style: none; text-align: center; }
+        
+        #menu li { display: inline-block; margin: 0 15px; }
+
+      
+
+        #imagen { 
+            display: block; 
+            margin: 20px auto; /* Centra la imagen del molino */
+            border-radius: 50%; /* La hace circular como en la foto */
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        /* Estilos adicionales para recrear la imagen visual */
+        .hero {
+            background-image: url('quijote.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: purple;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        .seccion-azul {
+           
+            background-color: lightblue;
+            padding: 50px;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+     <a href="index.html">Volver</a>
+         <div class="hero">
+        <h1>Visite La Mancha</h1>
+        <p>Tierra de Quijotes</p>
+    </div>
+
+    <div id="cabecera">
+        <i>Una experiencia inolvidable</i>
+    </div>
+
+   
+
+    <div class="seccion-azul">
+        <img id="imagen" src="Molino_Castilla-Mancha.jpg" alt="Molino de viento">
+    </div>
+
+    <div style="height: 1000px; padding: 20px;">
+        
+    </div>
+</body>
+</html>

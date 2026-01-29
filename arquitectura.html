@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ágora - Estudio de Arquitectura</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra roja superior */
+.navbar {
+    background-color: #a52a2a; /* Color café/rojizo */
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra los links */
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 120px;
+}
+
+/* Sección de la imagen de fondo */
+.hero {
+    height: 80vh; /* Altura de la sección */
+    background-image: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                      url('vista-superior-mano-sosteniendo-lapiz-espacio-copiar_23-2148419565.avif'); /* Reemplaza con tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center;
+}
+
+/* Estilo del Texto */
+.hero-content h1 {
+    font-size: 4rem;
+    color: #ffcc00; /* Color amarillo */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para legibilidad */
+}
+
+.hero-content p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-top: 10px;
+}
+.quienes-somos {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+/* Título superior centrado */
+.titulo-rojo {
+    text-align: center;
+    color: #a52a2a; /* Rojo oscuro como el de la imagen */
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las dos columnas */
+.contenedor-flex {
+    display: flex;
+    align-items: flex-start; /* Alinea al inicio superior */
+    gap: 40px; /* Espacio entre texto e imagen */
+}
+
+/* Columna de texto */
+.texto {
+    flex: 1; /* Toma el 50% del espacio */
+}
+
+.texto h3 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    color: #000;
+}
+
+.texto p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Columna de imagen */
+.imagen {
+    flex: 1;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: sombra suave */
+}
+
+/* Responsivo: para que en móviles se vea uno debajo del otro */
+@media (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Obras</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Ágora</h1>
+            <p>Estudio de Arquitectura</p>
+        </div>
+    </header>
+    <section class="quienes-somos">
+    <h2 class="titulo-rojo">Quienes somos</h2>
+
+    <div class="contenedor-flex">
+        <div class="texto">
+            <h3>Un equipo multidisciplinar y profesional</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore expedita modi rem. Cumque ut praesentium rerum qui excepturi ratione minus possimus omnis consectetur, dicta, illum, repellat veniam nobis velit!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta tempore expedita modi rem. Cumque ut praesentium rerum qui excepturi ratione minus possimus omnis consectetur, dicta, illum, repellat veniam nobis velit!</p>
+        </div>
+
+        <div class="imagen">
+            <img src="dinámicas-de-trabajo-en-equipo-1024x575.jpeg" alt="Nuestro equipo trabajando">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

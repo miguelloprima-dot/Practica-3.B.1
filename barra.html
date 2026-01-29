@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación</title>
+    <style>
+        /* Estilos generales para eliminar márgenes por defecto */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Contenedor principal de la barra */
+        nav {
+            background-color: #1a1a72; /* El azul oscuro de la imagen */
+            padding: 15px 0;
+        }
+
+        /* Lista de enlaces */
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centra los elementos */
+            gap: 30px; /* Espacio entre cada opción */
+        }
+
+        /* Estilo de los enlaces */
+        .menu li a {
+            color: #d1d1e9; /* Color de texto claro/grisáceo */
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            margin-right: 60px;
+        }
+
+        /* Efecto al pasar el ratón */
+        .menu li a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="#">Quienes Somos</a></li>
+            <li><a href="#">Consultoría</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Dónde Estamos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
